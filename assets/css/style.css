@@ -33348,6 +33348,7 @@ html[dir="rtl"] .checklist.style2 li {
   margin-left: 85px;
   position: relative;
   z-index: 2;
+  float: right;
 }
 html[dir="rtl"] .p-r-ar {
   padding-right: 230px !important;
@@ -49301,12 +49302,12 @@ html[dir="rtl"] .th-slider.has-shadow {
 html[dir="rtl"] #select {
   width: 175px !important;
   height: 54.5px !important;
-  margin-right: -146px !important;
+  margin-right: -111px !important;
 }
 #select {
   width: 124px !important;
   height: 54.5px !important;
-  margin-right: -102px !important;
+  margin-right: -64px !important;
 }
 
 .num-reverse {
@@ -49419,25 +49420,26 @@ html[dir="rtl"] .testimonial-arabic {
     font-size: 35px !important;
   }
   .nnn {
-     font-size: 35px !important;
+    font-size: 35px !important;
   }
   .solution-title {
     font-size: 24px;
-}
-.footer-logo-img {
-      margin-top: -10% !important;
-}
+  }
+  .footer-logo-img {
+    margin-top: -10% !important;
+  }
   html[dir="rtl"] .hero-title {
     margin-right: -166px !important;
     /* margin-left: -45% !important; */
     font-size: 33px;
   }
 
-  html[dir="rtl"] .num-reversedd, .num-reverse {
+  html[dir="rtl"] .num-reversedd,
+  .num-reverse {
     display: block !important;
     direction: rtl;
     float: left;
-}
+  }
   /* button */
   .th-btn.style2 {
     padding: 19.5px 34px;
@@ -49480,12 +49482,12 @@ html[dir="rtl"] .testimonial-arabic {
     /* margin-left: -26% !important; */
     font-size: 35px !important;
   }
-   .nnn {
-     font-size: 35px !important;
+  .nnn {
+    font-size: 35px !important;
   }
   .solution-title {
     font-size: 24px;
-}
+  }
   /* button */
   .th-btn.style2 {
     padding: 19.5px 34px;
@@ -49513,9 +49515,10 @@ html[dir="rtl"] .testimonial-arabic {
     font-size: 25px !important;
     width: 382px !important;
   }
-  html[dir="rtl"] .num-reversedd, .num-reverse {
+  html[dir="rtl"] .num-reversedd,
+  .num-reverse {
     display: block !important;
     direction: rtl;
     float: left;
-}
+  }
 }
