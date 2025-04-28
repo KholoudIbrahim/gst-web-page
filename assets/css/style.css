@@ -49197,7 +49197,7 @@ html[dir="rtl"] .about-ar {
 
 .about-main {
   /* width:500px !important; */
-  font-size: 38px !important;
+  font-size: 36px !important;
 }
 
 html[dir="rtl"] #name,
@@ -49414,15 +49414,30 @@ html[dir="rtl"] .testimonial-arabic {
   }
 
   .hero-title {
-    margin-left: -166px !important;
+    margin-left: -10px !important;
     /* margin-left: -45% !important; */
-    font-size: 33px;
+    font-size: 35px !important;
   }
+  .nnn {
+     font-size: 35px !important;
+  }
+  .solution-title {
+    font-size: 24px;
+}
+.footer-logo-img {
+      margin-top: -10% !important;
+}
   html[dir="rtl"] .hero-title {
     margin-right: -166px !important;
     /* margin-left: -45% !important; */
     font-size: 33px;
   }
+
+  html[dir="rtl"] .num-reversedd, .num-reverse {
+    display: block !important;
+    direction: rtl;
+    float: left;
+}
   /* button */
   .th-btn.style2 {
     padding: 19.5px 34px;
@@ -49461,10 +49476,16 @@ html[dir="rtl"] .testimonial-arabic {
   }
 
   .hero-title {
-    margin-left: -166px !important;
+    margin-left: -10px !important;
     /* margin-left: -26% !important; */
-    font-size: 33px;
+    font-size: 35px !important;
   }
+   .nnn {
+     font-size: 35px !important;
+  }
+  .solution-title {
+    font-size: 24px;
+}
   /* button */
   .th-btn.style2 {
     padding: 19.5px 34px;
@@ -49492,4 +49513,9 @@ html[dir="rtl"] .testimonial-arabic {
     font-size: 25px !important;
     width: 382px !important;
   }
+  html[dir="rtl"] .num-reversedd, .num-reverse {
+    display: block !important;
+    direction: rtl;
+    float: left;
+}
 }
