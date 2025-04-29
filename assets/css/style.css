@@ -49429,7 +49429,7 @@ html[dir="rtl"] .testimonial-arabic {
     margin-top: -10% !important;
   }
   html[dir="rtl"] .hero-title {
-    margin-right: -166px !important;
+    margin-right: -32px !important;
     /* margin-left: -45% !important; */
     font-size: 33px;
   }
@@ -49485,6 +49485,13 @@ html[dir="rtl"] .testimonial-arabic {
     /* margin-left: -26% !important; */
     font-size: 35px !important;
   }
+
+   html[dir="rtl"] .hero-title {
+    margin-right: -32px !important;
+    /* margin-left: -45% !important; */
+    font-size: 33px;
+  }
+
   .nnn {
     font-size: 35px !important;
   }
