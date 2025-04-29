@@ -49469,6 +49469,9 @@ html[dir="rtl"] .testimonial-arabic {
     font-size: 25px !important;
     width: 382px !important;
   }
+  .mask-small {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .hero-subtitle {
@@ -49521,4 +49524,16 @@ html[dir="rtl"] .testimonial-arabic {
     direction: rtl;
     float: left;
   }
+  .mask-small {
+    display: none;
+  }
+}
+
+/* Add this CSS rule to your stylesheet */
+/* html[dir="rtl"]  .slider-prev .far, html[dir="rtl"]  .slider-next .far{
+  transform: scaleX(-1) !important;
+} */
+
+.slider-arrow {
+  transition: transform 0.3s ease-in-out !important;
 }
