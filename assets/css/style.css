@@ -377,7 +377,8 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 38px;
   line-height: 1.25;
 }
 
