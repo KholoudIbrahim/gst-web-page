@@ -13141,7 +13141,7 @@ html[dir="rtl"] .hero-2 .th-hero-bg:before {
 .hero-style2 {
   position: relative;
   z-index: 6;
-  margin: 240px 0;
+  margin: 240px 50px;
   max-width: 620px;
 }
 
@@ -49477,7 +49477,7 @@ html[dir="rtl"] .testimonial-arabic {
     padding-right: 5px !important;
   }
   html[dir="rtl"] .num-reversedd {
-    float:right;
+    float: right;
   }
 }
 @media (max-width: 767px) {
@@ -49544,8 +49544,8 @@ html[dir="rtl"] .testimonial-arabic {
   html[dir="rtl"] .p-r-ar {
     padding-right: 5px !important;
   }
-    html[dir="rtl"] .num-reversedd {
-    float:right;
+  html[dir="rtl"] .num-reversedd {
+    float: right;
   }
 }
 
