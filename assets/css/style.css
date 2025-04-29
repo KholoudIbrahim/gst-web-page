@@ -49475,6 +49475,9 @@ html[dir="rtl"] .testimonial-arabic {
   html[dir="rtl"] .p-r-ar {
     padding-right: 5px !important;
   }
+  html[dir="rtl"] .num-reversedd {
+    float:right;
+  }
 }
 @media (max-width: 767px) {
   .hero-subtitle {
@@ -49539,6 +49542,9 @@ html[dir="rtl"] .testimonial-arabic {
   }
   html[dir="rtl"] .p-r-ar {
     padding-right: 5px !important;
+  }
+    html[dir="rtl"] .num-reversedd {
+    float:right;
   }
 }
 
