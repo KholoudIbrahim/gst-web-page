@@ -49303,12 +49303,12 @@ html[dir="rtl"] .th-slider.has-shadow {
 html[dir="rtl"] #select {
   width: 175px !important;
   height: 54.5px !important;
-  margin-right: -111px !important;
+  margin-right: 0px !important;
 }
 #select {
   width: 124px !important;
   height: 54.5px !important;
-  margin-right: -64px !important;
+  margin-right: 0px !important;
 }
 
 .num-reverse {
@@ -49353,10 +49353,16 @@ html[dir="rtl"] .footer-wrapper {
 }
 
 html[dir="rtl"] .footer-contact {
-  margin-right: 20px !important;
+  /* margin-right: 20px !important; */
+  margin-right: 10px !important;
 }
 .footer-contact {
-  margin-left: 20px !important;
+  /* margin-left: 20px !important; */
+  margin-left: 10px !important;
+}
+
+.xyz {
+  font-size: 18px !important;
 }
 /* .project-img img {
   width: 391px !important;
@@ -49366,7 +49372,8 @@ html[dir="rtl"] .footer-contact {
 } */
 
 html[dir="rtl"] .th-widget-about .about-text {
-  width: 337px;
+  /* width: 337px; */
+  direction: rtl;
 }
 html[dir="rtl"] .proj-ar {
   float: right;
@@ -49567,4 +49574,11 @@ html[dir="rtl"] .testimonial-arabic {
 
 .slider-arrow {
   transition: transform 0.3s ease-in-out !important;
+}
+
+html[dir="rtl"] .arabic-menu {
+  direction: rtl;
+}
+
+.link-after:after {
 }
