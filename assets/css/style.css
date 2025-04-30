@@ -49580,5 +49580,6 @@ html[dir="rtl"] .arabic-menu {
   direction: rtl;
 }
 
-.link-after:after {
+.link-after a::after {
+  margin-right: 50px !important;
 }
