@@ -49479,6 +49479,9 @@ html[dir="rtl"] .testimonial-arabic {
   html[dir="rtl"] .num-reversedd {
     float: right;
   }
+  .mobile-select {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .hero-subtitle {
@@ -49547,6 +49550,14 @@ html[dir="rtl"] .testimonial-arabic {
   html[dir="rtl"] .num-reversedd {
     float: right;
   }
+
+  .mobile-select {
+    display: block;
+  }
+}
+
+.mobile-select {
+  display: none;
 }
 
 /* Add this CSS rule to your stylesheet */
