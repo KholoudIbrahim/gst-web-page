@@ -36,7 +36,7 @@
 
   /*---------- 01. On Load Function ----------*/
   $(window).on("load", function () {
-    $(".preloader").fadeOut();
+    $(".preloader").fadeOut(300);
   });
 
   /*---------- 02. Preloader ----------*/

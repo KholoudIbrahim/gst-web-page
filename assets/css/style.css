@@ -49486,7 +49486,7 @@ html[dir="rtl"] .testimonial-arabic {
   html[dir="rtl"] .num-reversedd {
     float: right;
   }
-  .mobile-select {
+  #select {
     display: block;
   }
 }
@@ -49558,19 +49558,10 @@ html[dir="rtl"] .testimonial-arabic {
     float: right;
   }
 
-  .mobile-select {
+  #select {
     display: block;
   }
 }
-
-.mobile-select {
-  display: none;
-}
-
-/* Add this CSS rule to your stylesheet */
-/* html[dir="rtl"]  .slider-prev .far, html[dir="rtl"]  .slider-next .far{
-  transform: scaleX(-1) !important;
-} */
 
 .slider-arrow {
   transition: transform 0.3s ease-in-out !important;
@@ -49581,5 +49572,5 @@ html[dir="rtl"] .arabic-menu {
 }
 
 html[dir="rtl"] .main-menu ul li.menu-item-has-children > a:after {
-    margin-right: 5px;
+  margin-right: 5px;
 }

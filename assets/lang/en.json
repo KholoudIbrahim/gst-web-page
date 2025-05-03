@@ -1,15 +1,11 @@
 {
   "home": "Home",
-  "about-us": "About Us",
   "serv": "Services",
-  "our-services": "what we do",
   "our-services-desc": "Smart Solutions for Digital Future",
 
-  "who-are-we": "WHO ARE WE",
   "who-are-title": "About Us",
   "who-are-subtitle": "We Design Technology To Serve Your Business Efficiently",
   "who-are-content1": "G.S.T is an Egyptian company specializing in software and technology solutions. It was founded with a clear goal:\nTo provide smart and practical solutions to every technical challenge.\n We accompany our clients through all project phases, from analysis and planning, through design and development, to launch and technical support.",
-  "who-are-first": "Extensive experience in implementing complex technical projects",
   "who-are-second": "An integrated team of programmers, designers, consultants and marketing experts",
   "who-are-third": "Solutions tailored to meet each client's needs according to their goals and orientations.",
 
@@ -26,33 +22,18 @@
   "consulting-desc": "Make smarter technical decisions. Comprehensive insights and guidance aligning tech with business goals.",
   "plans-s": "Feasibility Studies and Marketing Plans",
   "plans-desc": "Preparing comprehensive feasibility studies and implementing marketing strategies to explore new opportunities.",
-  "more-details": "More Details",
   "contact-us": "Contact Us",
-  "see-more": "See More",
-  "how-work": "How We Work",
+
   "why-us": "Why Choose Us",
   "collab": "Data-Driven Marketing Insights",
-  "collab-desc": "Providing software and technology solutions that help our clients achieve long-term goals.",
   "results": "Custom Software Development",
-  "results-desc": " Assisting in the development of systems and technologies that increase productivity and improve customer interaction.",
   "transparency": "SEO & Digital Marketing",
-  "trans-desc": "Offering feasibility studies and comprehensive marketing plans that aid in expansion and growth.",
   "ongoing-support": "24/7 Customer Support",
-  "support-desc": "Providing continuous support and guidance to ensure the successful implementation of solutions.",
   "growth": "Business Growth Strategies",
   "user-friendly": "User-Friendly Solutions",
-
-  "our-team": "Get in touch with our team",
-  "team-desc": "We have the team and know-how to help you scale 10x faster.",
-  "phone-num": "Phone Number",
   "mob-num": "Mobile Number:",
   "num-digits": "1553304400 20+",
-  "email": "Email Address",
-  "location": "Our Location",
   "loc-desc": "167 Northern 90 St, Jasmine (7), New Cairo, Egypt",
-
-  "view-maps": "VIEW ON MAP",
-  "email-us": "Email Us On:",
 
   "tharawat": "Tharawat Website",
   "thr-desc": " Tharawat is a leading company in providing diverse services covering several vital areas aiming to support and develop the local and international economy. The company was established to be a major center for providing comprehensive solutions for projects and investments.",
@@ -120,5 +101,10 @@
   "projects": "Finished Projects",
   "solution-title": "Together, We Build Successful Businesses with Smart Marketing and Advanced Software Solutions.",
   "solution-desc": "Transform your business with cutting-edge marketing strategies and custom software solutions. Our team of experts delivers tailored services to enhance your digital presence, streamline operations, and drive growth.",
-  "partnership":"Your Partnership for Digital Success"
+  "partnership":"Your Partnership for Digital Success",
+  "years":"Years Experience",
+
+  "terms-conditions":"Terms and Conditions",
+  "gst":"GST for Software and Marketing Solutions",
+  "terms-into":" Welcome to the official website of GST for Software and Marketing Solutions. By accessing or using our website or services, you agree to comply with and be bound by the following terms and conditions. If you do not agree with any part of these terms, please do not use our website or services."
 }
