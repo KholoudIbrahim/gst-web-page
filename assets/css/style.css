@@ -49505,7 +49505,7 @@ html[dir="rtl"] .testimonial-arabic {
     margin-top: -79px !important;
   }
       .header-layout1 .header-logo img {
-        margin-left:-13px;
+        margin-left:-13px !important;
       }
 }
 @media (max-width: 767px) {
@@ -49597,7 +49597,7 @@ html[dir="rtl"] .testimonial-arabic {
     margin-top: -79px !important;
   }
   .header-layout1 .header-logo img {
-        margin-left:-13px;
+        margin-left:-13px !important;
       }
 }
 
