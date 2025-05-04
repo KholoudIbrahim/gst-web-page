@@ -49374,6 +49374,7 @@ html[dir="rtl"] .footer-contact {
 html[dir="rtl"] .th-widget-about .about-text {
   /* width: 337px; */
   direction: rtl;
+  text-align: center;
 }
 html[dir="rtl"] .proj-ar {
   float: right;
