@@ -49232,7 +49232,7 @@ html[dir="rtl"] .contact-title {
 
 html[dir="rtl"] .contact-title2 {
   text-align: right;
-  width: 550px !important;
+  /* width: 550px !important; */
 }
 html[dir="rtl"] .float-r {
   text-align: right !important;
