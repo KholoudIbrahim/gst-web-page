@@ -49488,7 +49488,24 @@ html[dir="rtl"] .testimonial-arabic {
   }
   #select {
     display: block;
+    /* padding: 0 0px 0 14px; */
+    width: 90px !important;
+    margin-inline: 202px;
+    /* width: 88px !important; */
+    height: 51px !important;
+    margin-right: 0px !important;
+    margin-top: -79px !important;
   }
+  html[dir="rtl"] #select {
+    margin-inline: 202px;
+    width: 88px !important;
+    height: 51px !important;
+    margin-right: 0px !important;
+    margin-top: -79px !important;
+  }
+      .header-layout1 .header-logo img {
+        margin-left:-13px;
+      }
 }
 @media (max-width: 767px) {
   .hero-subtitle {
@@ -49560,7 +49577,24 @@ html[dir="rtl"] .testimonial-arabic {
 
   #select {
     display: block;
+    /* padding: 0 0px 0 14px; */
+    width: 90px !important;
+        margin-inline: 202px;
+    /* width: 88px !important; */
+    height: 51px !important;
+    margin-right: 0px !important;
+    margin-top: -79px !important;
   }
+  html[dir="rtl"] #select {
+    margin-inline: 202px;
+    width: 88px !important;
+    height: 51px !important;
+    margin-right: 0px !important;
+    margin-top: -79px !important;
+  }
+  .header-layout1 .header-logo img {
+        margin-left:-13px;
+      }
 }
 
 .slider-arrow {
