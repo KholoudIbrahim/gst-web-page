@@ -21,6 +21,77 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/img/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/img/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/img/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/img/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/img/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/img/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/img/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/img/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/img/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicons/manifest.json" /> -->
     <link rel="stylesheet" href="assets/css/nice-select.css" />
 
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -29,6 +100,7 @@
       content="assets/img/favicons/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/to.png" /> -->
     <link rel="icon" type="image/png" href="assets/img/to.png" />
     <!--==============================
 	  Google Fonts
@@ -135,7 +207,7 @@
   <body>
     <div class="container">
       <header>
-        <!-- <select
+        <select
           data-i18n-switcher
           class="locale-switcher my-auto"
           id="select"
@@ -145,11 +217,9 @@
             English
           </option>
           <option value="ar">Arabic (العربية)</option>
-        </select> -->
+        </select>
         <h1 data-i18n-key="terms-conditions">Terms and Conditions</h1>
-        <h5 data-i18n-key="gst">
-          GST for Software and Marketing Solutions
-        </h5>
+        <h5 data-i18n-key="gst">GST for Software and Marketing Solutions</h5>
         <p data-i18n-key="terms-intro">
           Welcome to the official website of GST for Software and Technical
           Solutions. By accessing or using our website or services, you agree to
@@ -157,7 +227,7 @@
           do not agree with any part of these terms, please do not use our
           website or services.
         </p>
-        <p>Last Updated: 30/4/2025</p>
+        <p class="m-english m-arabic">Last Updated: 30/4/2025</p>
       </header>
 
       <section>
@@ -290,6 +360,13 @@
         <p>&copy; 2025 G.S.T. All rights reserved.</p>
       </footer>
     </div>
+    <!--==============================
+    All Js File
+============================== -->
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -325,12 +402,208 @@
 
     <!-- nice select -->
     <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script>
-      console.log(navigator.language); // log the browser language
-      console.log(navigator.languages); // log the browser languages
-    </script>
 
     <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script>
+      const DEFAULT_LOCALE = "en";
+      const SUPPORTED_LOCALES = ["en", "ar"];
+      const LOCALE_STORAGE_KEY = "userLocale"; // Key for localStorage/sessionStorage
+      const STORAGE_TYPE = "localStorage"; // Change to "sessionStorage" if needed
+
+      const FULLY_QUALIFIED_LOCALE_DEFAULTS = {
+        en: "en-US",
+        ar: "ar-EG",
+      };
+
+      // State
+      let locale;
+      let translations = {};
+
+      // When the page content is ready...
+      document.addEventListener("DOMContentLoaded", () => {
+        const initialLocale =
+          getStoredLocale() || supportedOrDefault(browserLocales(true));
+        setLocale(initialLocale);
+        bindLocaleSwitcher(initialLocale);
+      });
+
+      // Load translations for the given locale and translate
+      // the page to this locale
+      async function setLocale(newLocale) {
+        if (newLocale === locale) return;
+
+        try {
+          const newTranslations = await fetchTranslationsFor(newLocale);
+          locale = newLocale;
+          translations = newTranslations;
+          document.documentElement.lang = newLocale;
+          document.documentElement.dir = dir(newLocale);
+          translatePage();
+          storeLocale(newLocale); // Store the locale
+        } catch (error) {
+          console.error("Failed to set locale:", error);
+          // Handle error gracefully (e.g., fallback to default locale)
+          await setLocale(DEFAULT_LOCALE);
+        }
+      }
+
+      // Retrieves translations JSON object for the given
+      // locale over the network
+      async function fetchTranslationsFor(newLocale) {
+        const response = await fetch(`assets/lang/${newLocale}.json`);
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch translations for ${newLocale}: ${response.status}`
+          );
+        }
+        return await response.json();
+      }
+
+      // Replace the inner text of all elements with the
+      // data-i18n-key attribute to translations corresponding
+      // to their data-i18n-key
+      function translatePage() {
+        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+      }
+
+      // Replace the inner text of the given HTML element
+      // with the translation in the active locale,
+      // corresponding to the element's data-i18n-key
+      function translateElement(element) {
+        const key = element.getAttribute("data-i18n-key");
+        const options = JSON.parse(element.getAttribute("data-i18n-opt")) || {};
+        element.innerText = translate(key, options);
+      }
+
+      function translate(key, interpolations = {}) {
+        const message = translations[key];
+        if (key.endsWith("-plural")) {
+          return interpolate(
+            pluralFormFor(message, interpolations.count),
+            interpolations
+          );
+        }
+        return interpolate(message, interpolations);
+      }
+
+      // Convert a message like "Hello, {name}" to "Hello, Chad"
+      // where the given interpolations object is {name: "Chad"}
+      function interpolate(message, interpolations) {
+        return Object.keys(interpolations).reduce((interpolated, key) => {
+          const value = formatDate(formatNumber(interpolations[key]));
+          return interpolated.replace(
+            new RegExp(`{\\s*${key}\\s*}`, "g"),
+            value
+          );
+        }, message);
+      }
+
+      /*
+  Given a value object like
+  {
+    "number" : 300000,
+    "style": "currency",
+    "currency": "EUR"
+  } and that the current locale is en, returns "€300,000.00"
+*/
+      function formatNumber(value) {
+        if (typeof value === "object" && value.number) {
+          const { number, ...options } = value;
+          return new Intl.NumberFormat(
+            FULLY_QUALIFIED_LOCALE_DEFAULTS[locale],
+            options
+          ).format(number);
+        }
+        return value;
+      }
+
+      /*
+  Given a value object like
+  {
+    "date": "2021-12-05 15:29:00",
+    "dateStyle": "long",
+    "timeStyle": "short"
+  } and that the current locale is en,
+  returns "December 5, 2021 at 3:29 PM"
+*/
+      function formatDate(value) {
+        if (typeof value === "object" && value.date) {
+          const { date, ...options } = value;
+          const parsedDate = typeof date === "string" ? Date.parse(date) : date;
+          return new Intl.DateTimeFormat(
+            FULLY_QUALIFIED_LOCALE_DEFAULTS[locale],
+            options
+          ).format(parsedDate);
+        }
+        return value;
+      }
+
+      /*
+  Given a forms object like
+  {
+    "zero": "No articles",
+    "one": "One article",
+    "other": "{count} articles"
+  } and a count of 1, returns "One article"
+*/
+      function pluralFormFor(forms, count) {
+        const matchingForm = new Intl.PluralRules(locale).select(count);
+        return forms[matchingForm];
+      }
+
+      function isSupported(locale) {
+        return SUPPORTED_LOCALES.includes(locale);
+      }
+
+      // Retrieve the first locale we support from the given
+      // array, or return our default locale
+      function supportedOrDefault(locales) {
+        return locales.find(isSupported) || DEFAULT_LOCALE;
+      }
+
+      function dir(locale) {
+        return locale === "ar" ? "rtl" : "ltr";
+      }
+
+      function bindLocaleSwitcher(initialValue) {
+        const switcher = document.querySelector("[data-i18n-switcher]");
+        if (switcher) {
+          switcher.value = initialValue;
+          switcher.onchange = (e) => setLocale(e.target.value);
+        }
+      }
+
+      /**
+       * Retrieve user-preferred locales from browser
+       *
+       * @param {boolean} languageCodeOnly - when true, returns
+       * ["en", "fr"] instead of ["en-US", "fr-FR"]
+       * @returns array | undefined
+       */
+      function browserLocales(languageCodeOnly = false) {
+        return navigator.languages.map((locale) =>
+          languageCodeOnly ? locale.split("-")[0] : locale
+        );
+      }
+
+      // Storage Functions
+      function storeLocale(locale) {
+        if (STORAGE_TYPE === "localStorage") {
+          localStorage.setItem(LOCALE_STORAGE_KEY, locale);
+        } else if (STORAGE_TYPE === "sessionStorage") {
+          sessionStorage.setItem(LOCALE_STORAGE_KEY, locale);
+        }
+      }
+
+      function getStoredLocale() {
+        if (STORAGE_TYPE === "localStorage") {
+          return localStorage.getItem(LOCALE_STORAGE_KEY);
+        } else if (STORAGE_TYPE === "sessionStorage") {
+          return sessionStorage.getItem(LOCALE_STORAGE_KEY);
+        }
+        return null;
+      }
+    </script>
   </body>
 </html>

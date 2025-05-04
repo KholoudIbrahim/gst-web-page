@@ -49417,6 +49417,9 @@ html[dir="rtl"] .testimonial-arabic {
 
 /* Media Query starts */
 @media (max-width: 575px) {
+  .mob-center {
+    text-align: center !important;
+  }
   .hero-subtitle {
     font-size: 16px;
     margin-bottom: 12px;
@@ -49509,6 +49512,11 @@ html[dir="rtl"] .testimonial-arabic {
   }
 }
 @media (max-width: 767px) {
+
+  .mob-center {
+    text-align: center !important;
+  }
+
   html[dir="rtl"] .checklist {
     margin-right: -23px !important;
   }
@@ -49616,3 +49624,6 @@ html[dir="rtl"] .main-menu ul li.menu-item-has-children > a:after {
 html[dir="rtl"] .ar-float {
   text-align: right !important;
 }
+  .cursor,.cursor2 {
+    display: none !important;
+  }
