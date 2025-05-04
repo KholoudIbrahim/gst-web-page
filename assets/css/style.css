@@ -49498,20 +49498,20 @@ html[dir="rtl"] .testimonial-arabic {
     margin-top: -79px !important;
   }
   html[dir="rtl"] #select {
-    margin-inline: 202px;
+    margin-inline: 205px;
     width: 88px !important;
     height: 52px !important;
     margin-right: 0px !important;
     margin-top: -79px !important;
   }
-      .header-layout1 .header-logo img {
-        margin-left:-13px !important;
-      }
+  .header-layout1 .header-logo img {
+    margin-left: -13px !important;
+  }
 }
 @media (max-width: 767px) {
   html[dir="rtl"] .checklist {
     margin-right: -23px !important;
- }
+  }
   .hero-subtitle {
     font-size: 16px;
     margin-bottom: 12px;
@@ -49583,7 +49583,7 @@ html[dir="rtl"] .testimonial-arabic {
     display: block;
     /* padding: 0 0px 0 14px; */
     width: 90px !important;
-        margin-inline: 202px;
+    margin-inline: 202px;
     /* width: 88px !important; */
     height: 52px !important;
     margin-right: 0px !important;
@@ -49597,8 +49597,8 @@ html[dir="rtl"] .testimonial-arabic {
     margin-top: -79px !important;
   }
   .header-layout1 .header-logo img {
-        margin-left:-13px !important;
-      }
+    margin-left: -13px !important;
+  }
 }
 
 .slider-arrow {
@@ -49611,4 +49611,8 @@ html[dir="rtl"] .arabic-menu {
 
 html[dir="rtl"] .main-menu ul li.menu-item-has-children > a:after {
   margin-right: 5px;
+}
+
+html[dir="rtl"] .ar-float {
+  text-align: right !important;
 }

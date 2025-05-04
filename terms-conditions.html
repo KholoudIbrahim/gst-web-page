@@ -81,7 +81,8 @@
       }
 
       h1,
-      h2,h5 {
+      h2,
+      h5 {
         color: #323f7c;
       }
 
@@ -134,8 +135,21 @@
   <body>
     <div class="container">
       <header>
+        <!-- <select
+          data-i18n-switcher
+          class="locale-switcher my-auto"
+          id="select"
+          style="float: right"
+        >
+          <option value="en" style="color: var(--theme) !important">
+            English
+          </option>
+          <option value="ar">Arabic (العربية)</option>
+        </select> -->
         <h1 data-i18n-key="terms-conditions">Terms and Conditions</h1>
-        <h5 data-i18n-key="gst">GST for Software and Marketing Solutions</h5>
+        <h5 data-i18n-key="gst">
+          GST for Software and Marketing Solutions
+        </h5>
         <p data-i18n-key="terms-intro">
           Welcome to the official website of GST for Software and Technical
           Solutions. By accessing or using our website or services, you agree to
@@ -276,12 +290,47 @@
         <p>&copy; 2025 G.S.T. All rights reserved.</p>
       </footer>
     </div>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
 
+    <!-- gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+
+    <!-- Particles JS -->
+    <script src="assets/js/particles.min.js"></script>
+
+    <script src="assets/js/particles-config.js"></script>
+
+    <!-- imageRevealHover js -->
+    <script src="assets/js/imageRevealHover.js"></script>
+
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
     <script>
-      // Basic JavaScript for potential enhancements (optional)
-      document.addEventListener("DOMContentLoaded", () => {
-        // You could add functionality here, like making the sections collapsible
-      });
+      console.log(navigator.language); // log the browser language
+      console.log(navigator.languages); // log the browser languages
     </script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
