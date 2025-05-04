@@ -49492,14 +49492,14 @@ html[dir="rtl"] .testimonial-arabic {
     width: 90px !important;
     margin-inline: 202px;
     /* width: 88px !important; */
-    height: 51px !important;
+    height: 52px !important;
     margin-right: 0px !important;
     margin-top: -79px !important;
   }
   html[dir="rtl"] #select {
     margin-inline: 202px;
     width: 88px !important;
-    height: 51px !important;
+    height: 52px !important;
     margin-right: 0px !important;
     margin-top: -79px !important;
   }
@@ -49508,6 +49508,9 @@ html[dir="rtl"] .testimonial-arabic {
       }
 }
 @media (max-width: 767px) {
+  html[dir="rtl"] .checklist {
+    margin-right: -23px !important;
+ }
   .hero-subtitle {
     font-size: 16px;
     margin-bottom: 12px;
@@ -49581,14 +49584,14 @@ html[dir="rtl"] .testimonial-arabic {
     width: 90px !important;
         margin-inline: 202px;
     /* width: 88px !important; */
-    height: 51px !important;
+    height: 52px !important;
     margin-right: 0px !important;
     margin-top: -79px !important;
   }
   html[dir="rtl"] #select {
     margin-inline: 202px;
     width: 88px !important;
-    height: 51px !important;
+    height: 52px !important;
     margin-right: 0px !important;
     margin-top: -79px !important;
   }
