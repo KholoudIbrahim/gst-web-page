@@ -201,6 +201,13 @@
         color: #777;
         font-size: 0.9em;
       }
+      h1 {
+        margin-left: 111px;
+      }
+      html[dir="rtl"] h1 {
+        margin-left: 178px;
+      }
+      
     </style>
   </head>
 
@@ -227,21 +234,25 @@
           do not agree with any part of these terms, please do not use our
           website or services.
         </p>
-        <p class="m-english m-arabic">Last Updated: 30/4/2025</p>
+        <p class="m-english m-arabic" data-i18n-key="updated">
+          Last Updated: 30/4/2025
+        </p>
       </header>
 
       <section>
-        <h2>1. Definitions</h2>
+        <h2 data-i18n-key="term-1">1. Definitions</h2>
         <ul>
-          <li>“Website” refers to the official website of GST.</li>
-          <li>
+          <li data-i18n-key="t1-p1">
+            “Website” refers to the official website of GST.
+          </li>
+          <li data-i18n-key="t1-p2">
             “Company” / “GST” refers to GST for Software and Technical
             Solutions.
           </li>
-          <li>
+          <li data-i18n-key="t1-p3">
             “Client” refers to any individual or entity using our services.
           </li>
-          <li>
+          <li data-i18n-key="t1-p4">
             “Services” include but are not limited to software development,
             mobile and web applications, IT consultancy, UI/UX design, and
             customized technical solutions.
@@ -250,8 +261,8 @@
       </section>
 
       <section>
-        <h2>2. Acceptance of Terms</h2>
-        <p>
+        <h2 data-i18n-key="term-2">2. Acceptance of Terms</h2>
+        <p data-i18n-key="t2">
           By using this website or any GST services, you acknowledge that you
           have read, understood, and accepted these Terms and Conditions in
           full. GST reserves the right to update or modify these terms at any
@@ -260,8 +271,8 @@
       </section>
 
       <section>
-        <h2>3. Intellectual Property</h2>
-        <p>
+        <h2 data-i18n-key="term-3">3. Intellectual Property</h2>
+        <p data-i18n-key="t3">
           All content on this website, including but not limited to text,
           graphics, code, logos, and software, is the intellectual property of
           GST or its licensors and is protected by international copyright and
@@ -271,8 +282,8 @@
       </section>
 
       <section>
-        <h2>4. Use of the Website</h2>
-        <p>
+        <h2 data-i18n-key="term-4">4. Use of the Website</h2>
+        <p data-i18n-key="t4">
           Users agree to use this website solely for lawful purposes and not to
           engage in any activity that disrupts its operation, compromises data
           integrity, or infringes upon the rights of others. GST reserves the
@@ -281,8 +292,8 @@
       </section>
 
       <section>
-        <h2>5. Privacy and Data Protection</h2>
-        <p>
+        <h2 data-i18n-key="term-5">5. Privacy and Data Protection</h2>
+        <p data-i18n-key="t5">
           We are committed to maintaining the privacy of our users. All personal
           data is processed in accordance with our Privacy Policy. <br />
           We do not share your information with third parties without your
@@ -292,8 +303,8 @@
       </section>
 
       <section>
-        <h2>6. Service Agreements</h2>
-        <p>
+        <h2 data-i18n-key="term-6">6. Service Agreements</h2>
+        <p data-i18n-key="t6">
           Service engagement may require a signed agreement outlining scope,
           timelines, deliverables, fees, and terms. GST is not liable for delays
           caused by third-party platforms, client-side delays, or force majeure
@@ -302,8 +313,8 @@
       </section>
 
       <section>
-        <h2>7. Payment Terms</h2>
-        <p>
+        <h2 data-i18n-key="term-7">7. Payment Terms</h2>
+        <p data-i18n-key="t7">
           All services are subject to the payment terms specified in the
           agreement or invoice. GST reserves the right to suspend or terminate
           services due to non-payment or late payment.
@@ -311,8 +322,8 @@
       </section>
 
       <section>
-        <h2>8. Limitation of Liability</h2>
-        <p>
+        <h2 data-i18n-key="term-8">8. Limitation of Liability</h2>
+        <p data-i18n-key="t8">
           GST shall not be liable for any indirect, incidental, special, or
           consequential damages resulting from the use or inability to use our
           website or services. All services are provided “as is” without
@@ -321,16 +332,16 @@
       </section>
 
       <section>
-        <h2>9. Third-Party Links</h2>
-        <p>
+        <h2 data-i18n-key="term-9">9. Third-Party Links</h2>
+        <p data-i18n-key="t9">
           Our website may contain links to third-party websites. GST is not
           responsible for the availability, content, or practices of such sites.
         </p>
       </section>
 
       <section>
-        <h2>10. Governing Law</h2>
-        <p>
+        <h2 data-i18n-key="term-10">10. Governing Law</h2>
+        <p data-i18n-key="t10">
           These terms are governed by and construed in accordance with the laws
           of the Arab Republic of Egypt. Any disputes shall be resolved
           exclusively by the competent courts of Cairo, Egypt.
@@ -338,18 +349,21 @@
       </section>
 
       <section class="contact-us">
-        <h2>11. Contact Us</h2>
-        <p>
+        <h2 data-i18n-key="term-11">11. Contact Us</h2>
+        <p data-i18n-key="t11">
           If you have any questions about these Terms and Conditions, please
           contact us at:
         </p>
         <p>
-          Email:
+          <span data-i18n-key="email-term"></span>
           <a href="mailto:info@g-software-t.com">info@g-software-t.com</a>
         </p>
-        <p>Phone: <a href="tel:+201553304400">+20 1553304400</a></p>
         <p>
-          Address:
+          <span data-i18n-key="phone"></span
+          ><a href="tel:+201553304400" data-i18n-key="tel">+20 1553304400</a>
+        </p>
+        <p>
+          <span data-i18n-key="address"></span>
           <a href="https://www.google.com/maps" data-i18n-key="loc-desc"
             >فيلا ١٦٧، التسعين الشمالي، قسم أول القاهرة الجديدة، مصر
           </a>
@@ -357,7 +371,7 @@
       </section>
 
       <footer>
-        <p>&copy; 2025 G.S.T. All rights reserved.</p>
+        <p data-i18n-key="copy-rights">&copy; 2025 G.S.T. All rights reserved.</p>
       </footer>
     </div>
     <!--==============================
