@@ -49512,6 +49512,7 @@ html[dir="rtl"] .testimonial-arabic {
   }
 }
 @media (max-width: 767px) {
+
   .mob-center {
     text-align: center !important;
   }
@@ -49623,12 +49624,6 @@ html[dir="rtl"] .main-menu ul li.menu-item-has-children > a:after {
 html[dir="rtl"] .ar-float {
   text-align: right !important;
 }
-.cursor,
-.cursor2 {
-  display: none !important;
-}
-
-#hero .swiper-slide .th-hero-bg {
-  height: 150vh !important;
-  object-fit: cover !important;
-}
+  .cursor,.cursor2 {
+    display: none !important;
+  }
