@@ -1,4 +1,21 @@
 {
+  "intro-first": "Marketing",
+  "intro-second": "Software Development",
+  "intro-third": "Consultation",
+
+  "intro-first-1": "Grow Your Business",
+  "intro-second-1": "Empower Your Business",
+  "intro-third-1": "Expert Guidance for",
+
+  "intro-first-2": "with Strategic Marketing",
+  "intro-second-2": "with Custom Software",
+  "intro-third-2": "Marketing & Software Success",
+
+  "intro-first-desc": "Boost your online presence, engage your audience, and drive conversions with tailored marketing strategies designed to meet your unique business goals.",
+  "intro-second-desc": "Enhance efficiency, streamline operations, and stay ahead of the competition with innovative software solutions designed specifically for your business.",
+  "intro-third-desc": "Whether it's refining your marketing strategy or developing cutting-edge software, our experts are here to provide tailored insights and support every step of the way.",
+
+  "discover-more": "Discover More",
   "home": "Home",
   "serv": "Services",
   "our-services-desc": "Smart Solutions for Digital Future",
@@ -63,23 +80,6 @@
   "make-appointment": "Make An Appointment",
   "make-appointment2": "Make An Appointment",
 
-  "intro-first": "Marketing",
-  "intro-second": "Software Development",
-  "intro-third": "Consultation",
-
-  "intro-first-1": "Grow Your Business",
-  "intro-second-1": "Empower Your Business",
-  "intro-third-1": "Expert Guidance for",
-
-  "intro-first-2": "with Strategic Marketing",
-  "intro-second-2": "with Custom Software",
-  "intro-third-2": "Marketing & Software Success",
-
-  "intro-first-desc": "Boost your online presence, engage your audience, and drive conversions with tailored marketing strategies designed to meet your unique business goals.",
-  "intro-second-desc": "Enhance efficiency, streamline operations, and stay ahead of the competition with innovative software solutions designed specifically for your business.",
-  "intro-third-desc": "Whether it's refining your marketing strategy or developing cutting-edge software, our experts are here to provide tailored insights and support every step of the way.",
-
-  "discover-more": "Discover More",
   "about-company": "About Company",
   "it-services": "IT SERVICES",
   "recent-posts": "Recent Posts",
@@ -144,5 +144,6 @@
   "phone": "Phone:",
   "address": "Address:",
   "tel": "+20 1553304400",
-  "copy-rights": "© 2025 G.S.T. All rights reserved."
+  "copy-rights": "© 2025 G.S.T. All rights reserved.",
+  "": ""
 }
