@@ -201,12 +201,30 @@
         color: #777;
         font-size: 0.9em;
       }
-      
+
       h1 {
         margin-left: 111px;
       }
       html[dir="rtl"] h1 {
         margin-left: 178px;
+      }
+      @media (max-width: 575px) {
+        html[dir="rtl"] #select {
+          margin-inline: 202px;
+          width: fit-content !important;
+          height: 52px !important;
+          margin-right: 0px !important;
+          margin-top: -21px !important;
+        }
+      }
+      @media (max-width: 767px) {
+        html[dir="rtl"] #select {
+          margin-inline: 202px;
+          width: fit-content !important;
+          height: 52px !important;
+          margin-right: 0px !important;
+          margin-top: -21px !important;
+        }
       }
     </style>
   </head>
